@@ -48,8 +48,8 @@
 
     <TextView
         android:id="@+id/txtDisplay"
-        android:layout_width="393dp"
-        android:layout_height="295dp"
+        android:layout_width="339dp"
+        android:layout_height="289dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"

@@ -46,13 +46,13 @@ public class MainDisplay extends AppCompatActivity implements View.OnClickListen
 
         switch(v.getId()){
             case R.id.btn1:
-                if (con > 0 && con1 > 0) {
-                    con1a=1;
-                    btn1.setEnabled(false);
+                if (con > 0 && con1 > 0) { // a hacky condition to catch the 3rd condition layer,
+                    con1a=1; //upon the 3rd condition layer, pushing button 1 sets your outcome to first choice
+                    btn1.setEnabled(false); //disabling all the buttons after the final outcome
                     btn2.setEnabled(false);
                     btn3.setEnabled(false);
                     btn4.setEnabled(false);
-                    break;
+                    break; //break allows us to catch the condition without actually being caught by other conditions below
                 }
                 if(con > 0){con1= 1;break;}
                 if(con == 0){con=1;}
