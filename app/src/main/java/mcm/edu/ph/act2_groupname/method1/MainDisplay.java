@@ -334,9 +334,7 @@ public class MainDisplay extends AppCompatActivity implements View.OnClickListen
                 }
             }
         }
-        textDisplay.setText(txtdialog + "\ncon: "+con+
-                "\ncon1: "+con1+
-                "\ncon1a: "+con1a);
+        textDisplay.setText(txtdialog);
     }
 
 }
