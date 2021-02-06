@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">act2_groupname</string>
+    <string name="starting_story">
+        Our encounter with the British privateers went terribly bad. An armament battle using a creaky sloop against the Repentance cost us so much. We lost half our men and we barely escaped, thanks to what seemed as a cataclysmic storm. Our ship was not as unfortunate; the hurricane crippled our masts that the crew feel they are at the mercy of the sea. The ship\'s hull also sustained a lot of damage from holes that are still unattended, causing us to sink slowly. The crew are also tired and traumatized from everything that is happening. As the captain of this ship, are you capable of commanding your crew and saving them from this ordeal?
+        \n
+        Decision 1: The issues regarding the ship\'s condition should be addressed be first. The ship\'s survival will also be the the crew\'s survival.\n
+        Decision 2: Look for the maps and get the navigation back on track. We should look for the nearest island before we find ourselves at the bottom of the ocean.\n
+        Decision 3: We should attend to the crew\'s needs first. Reorganize everything and help those who need immediate attention. The crew are the pillars that are keeping the sheep intact.\n
+        Decision 4: Everybody should resign to their impending doom.\n
+    </string>
 </resources>

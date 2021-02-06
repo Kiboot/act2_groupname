@@ -15,13 +15,15 @@ public class MainDisplay extends AppCompatActivity implements View.OnClickListen
     Button btn1,btn2,btn3,btn4;
     int con=0;
     int con1, con1a;
-    String conditionsMain = "This is the main branch of the conditions. Pressing each buttons gets you deeper into the if-then statements of each conditions. Select a button to press.";
+    String conditionsMain; //Strings were relocated to /res/values/strings.xml. This is to reduce code clutter and better have a better code practice.
     String txtdialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maindisplay);
+        conditionsMain = getString(R.string.starting_story);
+
 
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
