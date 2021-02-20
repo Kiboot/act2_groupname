@@ -3,6 +3,7 @@ package mcm.edu.ph.act2_groupname.method1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -30,6 +31,7 @@ public class MainDisplay extends AppCompatActivity implements View.OnClickListen
         btn3 = findViewById(R.id.btn3);
         btn4 = findViewById(R.id.btn4);
         textDisplay = findViewById(R.id.txtDisplay);
+        textDisplay.setMovementMethod(new ScrollingMovementMethod());
 
         textDisplay.setText(conditionsMain);
 
@@ -54,7 +56,8 @@ public class MainDisplay extends AppCompatActivity implements View.OnClickListen
                     btn2.setEnabled(false);
                     btn3.setEnabled(false);
                     btn4.setEnabled(false);
-                    break; //break allows us to catch the condition without actually being caught by other conditions below
+                    break;
+                    //break allows us to catch the condition without actually being caught by other conditions below
                 }
                 if(con > 0){con1= 1;break;}
                 if(con == 0){con=1;}
@@ -119,7 +122,6 @@ public class MainDisplay extends AppCompatActivity implements View.OnClickListen
                 txtdialog = "Dialog for condition 1 branch 2 should appear here";
                 if (con1a == 1) {
                     txtdialog = "Dialog for condition 1 branch 2-1 should appear here";
-
                 } else if (con1a == 2) {
                     txtdialog = "Dialog for condition 1 branch 2-2 should appear here";
 
@@ -338,5 +340,4 @@ public class MainDisplay extends AppCompatActivity implements View.OnClickListen
         }
         textDisplay.setText(txtdialog);
     }
-
 }
